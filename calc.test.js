@@ -45,5 +45,5 @@ test("decodes a string using cesars cypher (z's and a's work as normal)", () => 
   expect(cesar('afbm')).toBe('zeal');
 });
 test("decodes a string using cesars cypher with puncuation", () => {
-  expect(cesar('Hp, ipnf.?')).toBe('Go, home.?');
+  expect(cesar('Hp, ipnf.???!!!')).toBe('Go, home.???!!!');
 });

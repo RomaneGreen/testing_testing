@@ -4,6 +4,12 @@ let cesar = message => {
   for (var l in message) {
     msgNum = message[l].charCodeAt() - 1;
 
+    if (message[l] == '!'){
+      
+        msgNum = message[l].charCodeAt();
+     }
+
+
     msgLetters = String.fromCharCode(msgNum)
       .replace("\u001f", " ")
       .replace("`", "z")
